@@ -16,7 +16,18 @@ module.exports = {
       colors: {
         "mainBlue": "#68B7FF",
         "inputBG": "#F0F0F0",
-        "inputPlaceholderText": "#BFBFBF"
+        "inputPlaceholderText": "#BFBFBF",
+        "DarkTextColor1": "#DEE4EE",
+        "DarkTextColor2": "#8A99AF",
+        "Dark": "#1C2434",
+        "Storke": "#E2E8F0",
+        "TextColor": "#64748B",
+        "Primary": "#3C50E0",
+        "Secondary": "#80CAEE",
+        "Green": "#10B981",
+        "Gray": "#EFF4FB",
+        "Red": "#FB5454",
+        "Yellow": "#F0950C",
       }
     },
   },

@@ -17,28 +17,28 @@ function Signup() {
                </div>
                <div className='w-full flex justify-between gap-3'>
                   <Input
-                     placeholder={"Fist Name"}
+                     placeholder="Fist Name"
                      type="text"
                   />
                   <Input
-                     placeholder={"Last Name"}
+                     placeholder="Last Name"
                      type="text"
                   />
                </div>
                <div className='mt-2 flex flex-col w-full gap-3'>
                   <Input
-                     placeholder={"Email"}
+                     placeholder="Email"
                      type="text"
                   />
                   <Input
-                     placeholder={"Password"}
+                     placeholder="Password"
                      type="text"
                   />
                   <Input
-                     placeholder={"Where did you hear about us"}
+                     placeholder="Where did you hear about us"
                      type="text"
                   />
-                  <Button title={"Sign up"} />
+                  <Button title="Sign up" />
                </div>
             </form>
          </div>
