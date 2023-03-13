@@ -1,6 +1,7 @@
 import React from 'react'
 
 import gridAlt from '../assets/Icons/grid-alt.svg'
+import { GiBigGear } from 'react-icons/gi'
 
 function Navbar() {
   return (
@@ -16,8 +17,30 @@ function Navbar() {
                         <img src={gridAlt} alt="gridIcon" />
                         Dashboard
                     </li>
-                    <li className='p-2 bg-[#333A48] rounded-md text-lg text-DarkTextColor1'>Lab</li>
-                    <li className='p-2 bg-[#333A48] rounded-md text-lg text-DarkTextColor1'>Messages</li>
+                    <li className='px-5 py-2 bg-[#333A48] rounded-md text-lg text-DarkTextColor1 flex gap-3'>
+                        <img src={gridAlt} alt="gridIcon" />
+                        Projects
+                    </li>
+                    <li className='px-5 py-2 bg-[#333A48] rounded-md text-lg text-DarkTextColor1 flex gap-3'>
+                        <img src={gridAlt} alt="gridIcon" />
+                        Courses
+                    </li>
+                    <li className='px-5 py-2 bg-[#333A48] rounded-md text-lg text-DarkTextColor1 flex gap-3'>
+                        <img src={gridAlt} alt="gridIcon" />
+                        Room
+                    </li>
+                    <li className='px-5 py-2 bg-[#333A48] rounded-md text-lg text-DarkTextColor1 flex gap-3'>
+                        <img src={gridAlt} alt="gridIcon" />
+                        Profile
+                    </li>
+                    <li className='px-5 py-2 bg-[#333A48] rounded-md text-lg text-DarkTextColor1 flex gap-3'>
+                        <img src={gridAlt} alt="gridIcon" />
+                        Lab
+                    </li>
+                    <li className='px-5 py-2 bg-[#333A48] rounded-md text-lg text-DarkTextColor1 flex gap-3'>
+                        <img src={gridAlt} alt="gridIcon" />
+                        Settings
+                    </li>
                 </ul>
             </div>
         </aside>
