@@ -4,9 +4,9 @@ import Navbar from './Navbar'
 
 function Layout({ children }) {
   return (
-    <div className='h-screen w-screen flex'>
+    <div className='h-screen w-screen flex relative font-poppins'>
       <Navbar />
-      <div className='w-full h-full flex flex-col'>
+      <div className='w-full h-full flex flex-col overflow-y-scroll relative'>
         <Headre />
         { children }
       </div>

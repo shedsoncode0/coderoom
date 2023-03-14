@@ -12,10 +12,10 @@ function Profile() {
             </div>
             <div className='shadow-xl w-full bg-white'>
                 <div className='w-full flex flex-col items-center relative'>
-                    <div className='w-full bg-Red h-[200px] rounded-md'></div>
+                    <div className='w-full bg-Green h-[200px] rounded-md'></div>
                     <div className='w-36 h-36 bg-Yellow rounded-full relative -top-[70px] border-[7px]'></div>
                 </div>
-                <div className='w-full flex flex-col items-center space-y-2'>
+                <div className='w-full flex flex-col items-center space-y-2 relative'>
                     <h1 className='text-2xl font-semibold text-Dark'>Shedrack Aigbe</h1>
                     <p className='py-1 text-lg text-Dark font-medium text-TextColor'>Developer</p>
                     <div className='p-3 border-[2px] border-Stroke flex space-x-3 rounded-md'>
