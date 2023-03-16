@@ -6,48 +6,42 @@ import reportWebVitals from './reportWebVitals';
 import {
   createBrowserRouter,
   RouterProvider,
+  BrowserRouter
 } from "react-router-dom";
-import Signup from './pages/Signup';
-import Login from './pages/Login';
-import Dashboard from './pages/Dashboard';
-import Layout from './components/Layout';
-import Profile from './pages/Profile';
 
-const router = createBrowserRouter([
-  {
-    path: "*",
-    element: <h1>404 Page Not Found</h1>,
-  },
-  {
-    path: "/",
-    element: <App />,
-  },
-  {
-    path: "/signup",
-    element: <Signup />,
-  },
-  {
-    path: "/login",
-    element: <Login />,
-  },
-  {
-    path: "/dashboard",
-    element: <Dashboard />,
-  },
-  {
-    path: "/profile",
-    element: <Profile />,
-  },
-]);
+// const router = createBrowserRouter([
+//   {
+//     path: "*",
+//     element: <h1>404 Page Not Found</h1>,
+//   },
+//   {
+//     path: "/",
+//     element: <App />,
+//   },
+//   {
+//     path: "/signup",
+//     element: <Signup />,
+//   },
+//   {
+//     path: "/login",
+//     element: <Login />,
+//   },
+//   {
+//     path: "/dashboard",
+//     element: <Dashboard />,
+//   },
+//   {
+//     path: "/profile",
+//     element: <Profile />,
+//   },
+// ]);
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <Layout>
-      <RouterProvider router={router} />
-    </Layout>
-  </React.StrictMode>
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function

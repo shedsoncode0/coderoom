@@ -1,4 +1,5 @@
 import React from 'react'
+import StatusTag from './StatusTag'
 
 function RecentProjects() {
     const tableStyle = {
@@ -19,28 +20,28 @@ function RecentProjects() {
             <td className={tableStyle.td}>Frontend</td>
             <td className={tableStyle.td}>25 Dec 2023 </td>
             <td className={tableStyle.td}>3 hours</td>
-            <td className={tableStyle.td}>Complite</td>
+            <td className={tableStyle.td}><StatusTag status="completed" text="Completed" /></td>
         </tr>
         <tr>
             <td className={tableStyle.td}>Food-API</td>
             <td className={tableStyle.td}>Frontend</td>
             <td className={tableStyle.td}>25 Dec 2023 </td>
             <td className={tableStyle.td}>3 hours</td>
-            <td className={tableStyle.td}>Complite</td>
+            <td className={tableStyle.td}><StatusTag status="completed" text="Completed" /></td>
         </tr>
         <tr>
             <td className={tableStyle.td}>Food-API</td>
             <td className={tableStyle.td}>Frontend</td>
             <td className={tableStyle.td}>25 Dec 2023 </td>
             <td className={tableStyle.td}>3 hours</td>
-            <td className={tableStyle.td}>Complite</td>
+            <td className={tableStyle.td}><StatusTag status="closed" text="Closed" /></td>
         </tr>
         <tr>
             <td className={tableStyle.td}>Food-API</td>
             <td className={tableStyle.td}>Frontend</td>
             <td className={tableStyle.td}>25 Dec 2023 </td>
             <td className={tableStyle.td}>3 hours</td>
-            <td className={tableStyle.td}>Complite</td>
+            <td className={tableStyle.td}><StatusTag status="ongoing" text="Ongoing" /></td>
         </tr>
     </table>
   )
