@@ -3,6 +3,7 @@ import React from 'react'
 import searchIcon from '../assets/Icons/search 2.svg'
 import alarmIcon from '../assets/Icons/alarm.svg'
 import chatIcon from '../assets/Icons/chat-alt-8.svg'
+import ProfileImage from './ProfileImage'
 
 function Headre() {
   return (
@@ -25,7 +26,9 @@ function Headre() {
                     <h1 className='font-medium'>Shedrack Aigbe</h1>
                     <p className='text-sm '>Developer</p>
                 </div>
-                <div className='w-[60px] h-[60px] bg-Gray rounded-full'></div>
+                <div className='w-[60px] overflow-hidden h-[60px] bg-Gray rounded-full'>
+                    <ProfileImage />
+                </div>
             </div>
         </div>
     </header>
