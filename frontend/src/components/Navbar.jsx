@@ -4,7 +4,7 @@ import {
   } from "react-router-dom";
 
 import { FiSettings } from 'react-icons/fi'
-import { AiOutlineUser } from 'react-icons/ai'
+import { AiOutlineCode, AiOutlineUser } from 'react-icons/ai'
 import { GiDesk } from 'react-icons/gi'
 import { FaRegSmileWink } from 'react-icons/fa'
 import { VscTools } from 'react-icons/vsc'
@@ -74,7 +74,7 @@ function Navbar() {
                      onClick={() => navbarActiveStatus("lab")} 
                      className={navbarRoute === "lab" ? navbar.active : navbar.notActive}
                     >
-                        <FiSettings size={20}/>
+                        <AiOutlineCode size={20}/>
                         <h1>Lab</h1>
                     </Link>
 

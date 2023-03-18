@@ -1,5 +1,6 @@
 import React from 'react'
 import ProfileImage from '../components/ProfileImage'
+import CoverImage from '../components/CoverImage'
 
 function Profile() {
   return (
@@ -13,7 +14,9 @@ function Profile() {
             </div> */}
             <div className='w-full bg-white'>
                 <div className='w-full flex flex-col items-center relative'>
-                    <div className='w-full bg-Green h-[300px] rounded-md'></div>
+                    <div className='w-full bg-Green overflow-hidden h-[300px] rounded-md'>
+                        <CoverImage />
+                    </div>
                     <div className='w-36 h-36 overflow-hidden rounded-full relative -top-[70px] border-[7px]'>
                         <ProfileImage />
                     </div>
