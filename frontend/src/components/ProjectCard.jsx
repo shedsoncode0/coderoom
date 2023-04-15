@@ -4,7 +4,7 @@ import '@splidejs/react-splide/css';
 
 function ProjectCard() {
   return (
-    <div className='max-w-[380px] rounded-md shadow1 p-5 space-y-3 relative'>
+    <div className='max-w-[300px] rounded-md shadow1 p-5 space-y-3 relative'>
         <div className='absolute p-2 bg-white -top-7 right-0 rounded-t-md'>
             <h1 className='font-medium text-Dark'>Fullstack</h1>
         </div>
@@ -12,13 +12,13 @@ function ProjectCard() {
             <h1 className='font-medium text-Dark'>$22.99</h1>
         </div>
         <div>
-            <div className='flex itmes-center space-x-2'>
+            {/* <div className='flex itmes-center space-x-2'>
                 <div className='w-[50px] h-[50px] bg-Gray rounded-full'></div>
                 <div className='flex flex-col justify-center'>
                     <h1 className='font-medium'>Shedrack Aigbe</h1>
                     <p className='text-sm '>Developer</p>
                 </div>
-            </div>
+            </div> */}
         </div>
         <Splide
                 options={ {
@@ -27,18 +27,18 @@ function ProjectCard() {
                 aria-label="My Favorite Images"
             >
                 <SplideSlide>
-                <div className='bg-Green rounded-md w-full h-[200px]'></div>
+                <div className='bg-Green rounded-md w-full h-[170px]'></div>
                 </SplideSlide>
                 <SplideSlide>
-                <div className='bg-Red rounded-md w-full h-[200px]'></div>
+                <div className='bg-Red rounded-md w-full h-[170px]'></div>
                 </SplideSlide>
                 <SplideSlide>
-                <div className='bg-Yellow rounded-md w-full h-[200px]'></div>
+                <div className='bg-Yellow rounded-md w-full h-[170px]'></div>
                 </SplideSlide>
             </Splide>
             <div>
                 <h1 className='font-bold text-dark text-xl truncate'>Movie-App</h1>
-                <p>
+                <p className="truncate">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                      molestias corrupti aliquid rerum quisquam
                 </p>
