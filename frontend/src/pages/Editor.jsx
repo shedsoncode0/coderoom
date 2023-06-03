@@ -7,13 +7,6 @@ const Editor = () => {
   const [css, setCss] = useState('');
   const [js, setJs] = useState('');
 
-  const [paneSize, setPaneSize] = useState({ width: 200, height: 200 });
-
-  const handleResize = (event, { size }) => {
-    setPaneSize(size);
-  };
-
-
   // State variables to store the line numbers for each code section
   const [htmlLineNumbers, setHtmlLineNumbers] = useState('');
   const [cssLineNumbers, setCssLineNumbers] = useState('');
@@ -23,6 +16,10 @@ const Editor = () => {
   const htmlTextareaRef = useRef(null);
   const cssTextareaRef = useRef(null);
   const jsTextareaRef = useRef(null);
+
+  const styles = {
+    pane: `flex mb-[20px] rounded-[4px] border-[1px] border-[#1C2434] flex-col`
+  }
 
   // Event handler for HTML code changes
   const handleHtmlChange = (event) => {
@@ -82,9 +79,7 @@ const Editor = () => {
   return (
     <div className='app'>
       <div className='editor'>
-      <Resizable >
-
-        <div className='pane'>
+      <Resizable  defaultSize={{height: "32%"}} minHeight={90} className={styles.pane}>
           <h3>HTML</h3>
           <div className='code-container'>
             <pre className='line-numbers'>{htmlLineNumbers}</pre>
@@ -95,9 +90,9 @@ const Editor = () => {
               rows={getLineCount(html)}
             ></textarea>
           </div>
-        </div>
+        
       </Resizable>
-        <div className='pane'>
+        <Resizable lockAspectRatioExtraHeight={50} defaultSize={{height: "32%"}} minHeight={90} className={styles.pane}>
           <h3>CSS</h3>
           <div className='code-container'>
             <pre className='line-numbers'>{cssLineNumbers}</pre>
@@ -108,8 +103,8 @@ const Editor = () => {
               rows={getLineCount(css)}
             ></textarea>
           </div>
-        </div>
-        <div className='pane'>
+        </Resizable>
+        <Resizable defaultSize={{height: "32%"}} minHeight={90} className={styles.pane}>
           <h3>JavaScript</h3>
           <div className='code-container'>
             <pre className='line-numbers'>{jsLineNumbers}</pre>
@@ -120,10 +115,9 @@ const Editor = () => {
               rows={getLineCount(js)}
             ></textarea>
           </div>
-        </div>
+        </Resizable>
       </div>
-      <div className='preview'>
-        <h3>Preview</h3>
+      <Resizable defaultSize={{width: "50%"}} className='bg-white m-5 rounded-[4px]'>
         <iframe
           title='preview'
           srcDoc={`<html>
@@ -136,7 +130,7 @@ const Editor = () => {
           width='100%'
           height='100%'
         ></iframe>
-      </div>
+      </Resizable>
     </div>
   );
 };
