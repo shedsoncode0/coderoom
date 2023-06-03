@@ -16,6 +16,9 @@ import Navbar from './components/Navbar';
 import Projects from './pages/Projects';
 import ProjectReview from './pages/ProjectReview';
 import Settings from './pages/Settings';
+import Signup from './pages/Signup';
+import Login from './pages/Login';
+import Editor from './pages/Editor';
 
 function App() {
   return (
@@ -29,6 +32,9 @@ function App() {
           <Route path='/projects' element={<Projects/>} />
           <Route path='/projects/:id' element={<ProjectReview />} />
           <Route path='/settings' element={<Settings />} />
+          <Route path='/signup' element={<Signup />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/lab' element={<Editor />} />
         </Routes>
       </div>
     </div>

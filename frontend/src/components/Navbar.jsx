@@ -70,7 +70,7 @@ function Navbar() {
                     </Link>
 
                     <Link 
-                     to="/settings" 
+                     to="/lab" 
                      onClick={() => navbarActiveStatus("lab")} 
                      className={navbarRoute === "lab" ? navbar.active : navbar.notActive}
                     >
